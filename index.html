@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app ="discGo">
+<html ng-app ="discGo" class="ng-scope">
   <head>
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="crossorigin="anonymous"></script>
@@ -14,6 +14,9 @@
     <title>discGo</title>
   </head>
   <body ng-controller="test">
+
+    <input type="text" ng-model="searchCriteria.artist" class="ng-scope">
+    <button type="button" ng-click="sendInfo(artist)" name="button" class="ng-scope">Search</button>
 
 
 

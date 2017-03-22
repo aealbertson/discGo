@@ -7,10 +7,10 @@ app.factory('discGoFactory', function($http) {
   return{
     searchResults : searchResults
   };
-  function searchResults() {
+  function searchResults(searchCriteria) {
     var promise = $http({
         method: 'GET',
-        url: 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=Cher&api_key=2f32cf4dbf47aa1b214b2cb2d18f9e24&format=json',
+        url: 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' + searchCriteria.artist + '&api_key=2f32cf4dbf47aa1b214b2cb2d18f9e24&format=json',
         }).then(function successCallback(response) {
           console.log(response);
           console.log(response.data.artist.name);

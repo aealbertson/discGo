@@ -2,11 +2,9 @@ var app = angular.module('discGo');
 
 app.controller('artistCtrl', function ($scope, discGoFactory){
 
-  $scope.sendInfo = function() {
+  $scope.sendInfo = function(artist) {
 
-    var searchCriteria = {
-      info: artist
-    };
+    var searchCriteria = artist;
 
     discGoFactory.searchResults(searchCriteria);
   }

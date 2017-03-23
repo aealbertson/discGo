@@ -14,13 +14,13 @@
     <title>discGo</title>
   </head>
   <body ng-controller="artistCtrl">
-
+<div ng-controller="printCtrl">
     <input type="text" ng-model="artist" class="ng-scope">
     <button type="button" ng-click="sendInfo(artist)" name="button" class="ng-scope">Search</button>
 
 
-    <section ng-scope> stuff </section>
-
+    <section ng-scope ng-repeat = "item in printToPage"> <h1> {{printToPage.name}} </h1></section>
+</div>
 
   </body>
 </html>

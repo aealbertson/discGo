@@ -28,5 +28,6 @@ app.factory('discGoFactory', function($http) {
     return finalData;
     console.log(finalData);
   }
+  }
 
 });

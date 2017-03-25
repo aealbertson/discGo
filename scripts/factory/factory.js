@@ -3,12 +3,32 @@ var app = angular.module('discGo');
 app.factory('discGoFactory', function($http) {
 
   var finalData = {};
+  var albumData = {};
 
   return {
-    finalData: finalData,
+    //finalData: finalData,
     searchArtist: searchArtist,
-    returnResults: returnResults
+    returnResults: returnResults,
+    searchAlbum: searchAlbum,
+    //albumData: albumData,
+    returnAlbumData: returnAlbumData
   };
+
+  function searchAlbum(searchCriteria) {
+      $http({
+        method: 'GET',
+        url: 'http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=' + searchCriteria + '&api_key=2f32cf4dbf47aa1b214b2cb2d18f9e24&format=json'
+      }).then(function successfulCallback(response) {
+        albumData = response.data.topalbums.album[0];
+        console.log(albumData);
+      }, function(error) {
+        console.log(error);
+      });
+    }
+
+    function returnAlbumData(){
+      return albumData;
+    }
 
   function searchArtist(searchCriteria) {
       $http({
@@ -28,6 +48,7 @@ app.factory('discGoFactory', function($http) {
   function returnResults() {
     return finalData;
   }
+
 
 
 });

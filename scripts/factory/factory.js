@@ -38,7 +38,7 @@ app.factory('discGoFactory', function($http) {
         console.log(response);
         finalData.artistName = response.data.artist.name;
         finalData.artistBio = response.data.artist.bio.summary;
-        finalData.artistImage = response.data.artist.image[3]["#text"];
+        finalData.artistImage = response.data.artist.image[2]["#text"];
       }, function(error) {
         console.log(error);
       });

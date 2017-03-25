@@ -9,7 +9,8 @@ app.config(function($routeProvider, $locationProvider) {
     .when('/result', {
       controller: 'printCtrl',
       templateUrl: 'views/artist-view.html'
-    });
+    })
+    .otherwise({redirectTo:'/search'});
 $locationProvider.hashPrefix("");
 
 });

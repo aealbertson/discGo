@@ -6,7 +6,8 @@ app.factory('discGoFactory', function($http) {
 
   return {
     finalData: finalData,
-    searchResults: searchResults
+    searchResults: searchResults,
+    returnResults: returnResults
   };
 
   function searchResults(searchCriteria) {

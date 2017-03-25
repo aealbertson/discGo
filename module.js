@@ -8,7 +8,7 @@ app.config(function($routeProvider, $locationProvider) {
     })
     .when('/result', {
       controller: 'printCtrl',
-      templateUrl: 'views/result-view.html'
+      templateUrl: 'views/artist-view.html'
     });
 $locationProvider.hashPrefix("");
 

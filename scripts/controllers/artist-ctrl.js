@@ -6,7 +6,7 @@ app.controller('artistCtrl', function ($scope, discGoFactory){
 
     var searchCriteria = artist;
 
-    discGoFactory.searchResults(searchCriteria);
+    discGoFactory.searchArtist(searchCriteria);
   }
 
 })

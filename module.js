@@ -11,6 +11,7 @@ app.config(function($routeProvider, $locationProvider) {
       templateUrl: 'views/artist-view.html'
     })
     .otherwise({redirectTo:'/search'});
+    
 $locationProvider.hashPrefix("");
 
 });

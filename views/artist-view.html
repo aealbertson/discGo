@@ -3,6 +3,6 @@
 {{artistInfo.artistName}}
 <br>
 <br>
-{{artistInfo.artistBio}}
+<p ng-bind-html="artistInfo.artistBio | unsafe"></p>
 <br>
 <img ng-src="{{artistInfo.artistImage}}" />

@@ -17,15 +17,18 @@ p {font-size: 16px;}
 
 }
 .container-fluid {
-    /*padding-top: 200px;
-    padding-bottom: 500px;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .container-foot {
   margin-top: 100%
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.navbar {
+.albumAlign {
+  float: left;
+}
+/*.navbar {
     padding-top: 75px;
     padding-bottom: 50px;
     border: 0;
@@ -33,4 +36,4 @@ p {font-size: 16px;}
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
-}
+}*/

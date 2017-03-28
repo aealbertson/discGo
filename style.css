@@ -20,7 +20,7 @@ p {
     color: #fff;
 }
 .container-fluid {
-    padding-top: 200px;
+    padding-top: 10px;
     padding-bottom: 500px;
 }
 .container-foot {
@@ -29,12 +29,13 @@ p {
 }
 
 
-/*.navbar {
-    padding-top: 75px;
-    padding-bottom: 50px;
+.navbar {
+    padding-top: 50px;
+    padding-bottom: 25px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
-}*/
+    background-color: #144966;
+}

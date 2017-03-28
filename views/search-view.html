@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
   <div class="col-sm-4"></div>
   <div class="col-sm-4">
     <form ng-submit="sendInfo(artist)">
@@ -9,4 +9,21 @@
     </form>
   </div>
   <div class="col-sm-4"></div>
+</div> -->
+
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+    <div class="input-group">
+      <form ng-submit="sendInfo(artist)">
+      <input type="text" ng-model="artist" class="form-control" placeholder="Search for Artist...">
+      <span class="input-group-btn">
+        <a href="#/result">
+        <button class="btn btn-default" ng-click="sendInfo(artist)" type="button">Go!</button>
+        </a>
+      </form>
+      </span>
+    </div>
+  </div>
+</div>
 </div>

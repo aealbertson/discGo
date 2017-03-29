@@ -4,6 +4,7 @@ app.factory('discGoFactory', function($http) {
 
   var finalData = {};
   var albumData = {};
+  var eventData = {};
 
   return {
     //finalData: finalData,
@@ -11,7 +12,8 @@ app.factory('discGoFactory', function($http) {
     returnResults: returnResults,
     searchAlbum: searchAlbum,
     //albumData: albumData,
-    returnAlbumData: returnAlbumData
+    returnAlbumData: returnAlbumData,
+    searchEvents: searchEvents
   };
 
   function searchAlbum(searchCriteria) {
@@ -59,5 +61,19 @@ app.factory('discGoFactory', function($http) {
   }
 
 
+  function searchEvents(searchCriteria) {
+    $http({
+      method: 'GET',
+      url: "https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=6skn9wemZW7Dmwi7eSPrBoRCwTj0A3QW&keyword=" + searchCriteria
+    }).then(function successfulCallback(response) {
+      console.log(response);
+    },function(error) {
+        console.log(error);
+      });
+  }
 
-});
+      function returnResults() {
+        return eventData;
+    }
+
+  });

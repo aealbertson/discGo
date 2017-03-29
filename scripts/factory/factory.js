@@ -17,7 +17,7 @@ app.factory('discGoFactory', function($http) {
   function searchAlbum(searchCriteria) {
       $http({
         method: 'GET',
-        url: 'http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=' + searchCriteria + '&api_key=2f32cf4dbf47aa1b214b2cb2d18f9e24&limit=5&format=json'
+        url: 'http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=' + searchCriteria + '&api_key=2f32cf4dbf47aa1b214b2cb2d18f9e24&autocorrect=1&limit=5&format=json'
       }).then(function successfulCallback(response) {
         console.log(albumData);
         albumData.albumName1 = response.data.topalbums.album["0"].name;
@@ -42,7 +42,7 @@ app.factory('discGoFactory', function($http) {
   function searchArtist(searchCriteria) {
       $http({
         method: 'GET',
-        url: 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' + searchCriteria + '&api_key=2f32cf4dbf47aa1b214b2cb2d18f9e24&format=json'
+        url: 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' + searchCriteria + '&api_key=2f32cf4dbf47aa1b214b2cb2d18f9e24&autocorrect=1&format=json'
       }).then(function successfulCallback(response) {
         console.log(response);
         finalData.artistName = response.data.artist.name;

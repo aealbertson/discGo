@@ -8,7 +8,7 @@ app.controller('artistCtrl', function ($scope, $location, discGoFactory){
 
     discGoFactory.searchArtist(searchCriteria);
     discGoFactory.searchAlbum(searchCriteria);
-    discGoFactory.searchEvents(searchCriteria);
+    // discGoFactory.searchEvents(searchCriteria);
 
     $location.path('/result');
   }

@@ -5,6 +5,8 @@
 <div class="row">
   <div class="col-sm-2"><img class="img-circle" ng-src="{{artistInfo.artistImage}}" /></div>
   <div class="col-sm-10">
+    <button type="button" class="btn btn-primary btn-sm">About</button>
+    <button type="button" class="btn btn-secondary btn-sm">Events</button>
     <div class="panel panel-default">
       <div class="panel-heading">{{artistInfo.artistName}}</div>
       <div class="panel-body" ng-bind-html="artistInfo.artistBio | unsafe">Panel Content</div>
@@ -24,4 +26,6 @@
       <ul class="albumAlign">{{albums.albumName5}}<br><img ng-src="{{albums.albumImage5}}" /></ul>
     </div>
   </div>
+</div>
+</div>
 </div>

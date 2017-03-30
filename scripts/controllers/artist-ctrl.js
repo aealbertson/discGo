@@ -8,23 +8,9 @@ app.controller('artistCtrl', function ($scope, $location, discGoFactory){
 
     discGoFactory.searchArtist(searchCriteria);
     discGoFactory.searchAlbum(searchCriteria);
-    discGoFactory.searchEvents(searchCriteria);
+
 
     $location.path('/result');
   }
 
 })
-
-
-// var app = angular.module('discGo');
-//
-// app.controller('printCtrl', function ($scope, discGoFactory){
-//
-// function printCtrl() {
-//     $scope.printToPage = [];
-//     $scope.submit = function() {
-//        $scope.printToPage.push({name : artistName, bio : artistBio });
-//     }
-//   }
-//
-// });

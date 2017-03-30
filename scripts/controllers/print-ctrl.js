@@ -2,8 +2,7 @@ var app = angular.module('discGo');
 
 app.controller('printCtrl', function($scope, discGoFactory){
   $scope.albums = discGoFactory.returnAlbumData();
-  $scope.artistInfo = discGoFactory.returnResults();
-  $scope.events = discGoFactory.returnEvents();
+  $scope.artistInfo = discGoFactory.returnArtistData();
   console.log($scope.artistInfo);
   console.log($scope.albums);
 

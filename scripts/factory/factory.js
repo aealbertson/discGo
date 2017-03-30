@@ -4,27 +4,34 @@ app.factory('discGoFactory', function($http) {
 
   var artistData = {};
   var topAlbumData = {};
+  var artistObject = {};
 
   return {
     artistData: artistData,  // this is the object holding artistName, artistBio, and artistImage
     searchArtist: searchArtist, // name of the function pulling the artist data from the api
     returnArtistData: returnArtistData, // name of the function that returns artistData
 
+    returnArtistInfo: returnArtistInfo,
+    searchArtist2: searchArtist2,
     topAlbumData: topAlbumData, // this is the object holding the top album results
     searchAlbum: searchAlbum, // name of the function pulling the top album data from the api
     returnAlbumData: returnAlbumData // name of the function that returns topAlbumData
   };
 
-  // function searchArtist2(searchCriteria) {
-  //     var promise = $http({
-  //       method: 'GET',
-  //       url: 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' + searchCriteria + '&api_key=2f32cf4dbf47aa1b214b2cb2d18f9e24&autocorrect=1&format=json'
-  //     }).then(function successCallback(response) {
-  //       console.log(response);
-  //       artistObject = response;
-  //     });
-  //     return promise;
-  //   } This is a working function for artists using promise.
+  function searchArtist2(searchCriteria) {
+      var promise = $http({
+        method: 'GET',
+        url: 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' + searchCriteria + '&api_key=2f32cf4dbf47aa1b214b2cb2d18f9e24&autocorrect=1&format=json'
+      }).then(function successCallback(response) {
+        console.log(response);
+        artistObject = response;
+      });
+      return promise;
+    }
+
+  function returnArtistInfo() {
+    return artistObject;
+  }
 
   function searchArtist(searchCriteria) {
       $http({

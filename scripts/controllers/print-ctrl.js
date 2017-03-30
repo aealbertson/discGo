@@ -3,9 +3,10 @@ var app = angular.module('discGo');
 app.controller('printCtrl', function($scope, discGoFactory){
   $scope.albums = discGoFactory.returnAlbumData();
   $scope.artistInfo = discGoFactory.returnArtistData();
+  $scope.artistInfo2 = discGoFactory.returnArtistInfo();
   console.log($scope.artistInfo);
   console.log($scope.albums);
-
+  console.log($scope.artistInfo2);
   // $scope.topFive = [];
   // //var albums = discGoFactory.searchAlbum($scope.artistInfo.artistName).data.topAlbums.album;
   // //discGoFactory.searchAlbum($scope.artistInfo.artistName);

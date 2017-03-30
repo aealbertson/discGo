@@ -15,6 +15,17 @@ app.factory('discGoFactory', function($http) {
     returnAlbumData: returnAlbumData // name of the function that returns topAlbumData
   };
 
+  // function searchArtist2(searchCriteria) {
+  //     var promise = $http({
+  //       method: 'GET',
+  //       url: 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' + searchCriteria + '&api_key=2f32cf4dbf47aa1b214b2cb2d18f9e24&autocorrect=1&format=json'
+  //     }).then(function successCallback(response) {
+  //       console.log(response);
+  //       artistObject = response;
+  //     });
+  //     return promise;
+  //   } This is a working function for artists using promise.
+
   function searchArtist(searchCriteria) {
       $http({
         method: 'GET',

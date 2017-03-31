@@ -39,3 +39,7 @@ p {
     letter-spacing: 5px;
     background-color: #144966;
 }
+
+button {
+  float: right;
+}

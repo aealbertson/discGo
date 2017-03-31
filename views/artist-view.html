@@ -1,14 +1,14 @@
 <nav class ="navbar navbar-default">
-      <a href = "#/search"><img src="discgo.png" class="img-responsive margin" style="display:inline" alt="music" width="225" height="225"></a>
+      <a href="#/search"><img src="discgo.png" class="img-responsive margin" style="display:inline" alt="music" width="225" height="225"></a>
 </nav>
 <div class="container-fluid">
 <div class="row">
-  <div class="col-sm-2"><img class="img-circle" ng-src="{{artistInfo.artistImage}}" /></div>
+  <div class="col-sm-2"><img class="img-circle" ng-src="{{artistImage}}" /></div>
   <div class="col-sm-10">
-    <button type="button" class="btn btn-primary btn-lg">On Tour</button>
+    <button type="button" class="btn btn-secondary btn-lg">On Tour</button>
     <div class="panel panel-default">
-      <div class="panel-heading">{{artistInfo.artistName}}</div>
-      <div class="panel-body" ng-bind-html="artistInfo.artistBio | unsafe">Panel Content</div>
+      <div class="panel-heading">{{artist}}</div>
+      <div class="panel-body" ng-bind-html="artistBio | unsafe">Panel Content</div>
     </div>
   </div>
 </div>
@@ -16,13 +16,13 @@
   <div class="col-sm-2"></div>
   <div class="col-sm-10">
     <div class="panel panel-default">
-      <div class="panel-heading">Top Albums for {{artistInfo.artistName}}</div>
+      <div class="panel-heading">Top Albums for {{artist}}</div>
       <div class="panel-body">
-      <ul class="albumAlign">{{albums.albumName1}}<br><img ng-src="{{albums.albumImage1}}" /></ul>
-      <ul class="albumAlign">{{albums.albumName2}}<br><img ng-src="{{albums.albumImage2}}" /></ul>
-      <ul class="albumAlign">{{albums.albumName3}}<br><img ng-src="{{albums.albumImage3}}" /></ul>
-      <ul class="albumAlign">{{albums.albumName4}}<br><img ng-src="{{albums.albumImage4}}" /></ul>
-      <ul class="albumAlign">{{albums.albumName5}}<br><img ng-src="{{albums.albumImage5}}" /></ul>
+      <ul class="albumAlign">{{albumName1}}<br><img ng-src="{{albumImage1}}" /></ul>
+      <ul class="albumAlign">{{albumName2}}<br><img ng-src="{{albumImage2}}" /></ul>
+      <ul class="albumAlign">{{albumName3}}<br><img ng-src="{{albumImage3}}" /></ul>
+      <ul class="albumAlign">{{albumName4}}<br><img ng-src="{{albumImage4}}" /></ul>
+      <ul class="albumAlign">{{albumName5}}<br><img ng-src="{{albumImage5}}" /></ul>
     </div>
   </div>
 </div>

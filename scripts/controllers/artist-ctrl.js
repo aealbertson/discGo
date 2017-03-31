@@ -8,7 +8,6 @@ app.controller('artistCtrl', function ($scope, $location, discGoFactory){
 
     discGoFactory.searchArtist(searchCriteria);
     discGoFactory.searchAlbum(searchCriteria);
-    discGoFactory.searchArtist2(searchCriteria);
     discGoFactory.storeArtistName(searchCriteria);//Save artist search name
 
 

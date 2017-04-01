@@ -41,5 +41,14 @@ p {
 }
 
 .tour {
-  float: right;
+
+}
+
+.artistImage {
+  max-width: 90%;
+  max-height: none;
+  margin-left: auto;
+  margin-right: auto;
+  border: 12px solid black;
+  
 }

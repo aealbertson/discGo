@@ -10,8 +10,8 @@ app.controller('printCtrl', function($scope, discGoFactory){
     $scope.artist = resp.artist.name;
     $scope.artistBio = resp.artist.bio.summary;
     $scope.artistImage = resp.artist.image[2]["#text"];
+    $scope.onTourData = resp.artist.ontour;
   });
-
 
   $scope.albumInfo = discGoFactory.searchAlbum(artist).then(function(resp){
     console.log(resp);
@@ -29,14 +29,15 @@ app.controller('printCtrl', function($scope, discGoFactory){
 
 });
 
+app.directive("onTour", function(){
+  return {
+    template: 'ON TOUR!'
+  };
+});
+
 app.filter('unsafe', function($sce){
   return function(val) {
     return $sce.trustAsHtml(val);
   };
 
 });
-
-
-// albumData.albumName = albumArray[i].album.name;
-// albumData.albumArtist = albumArray[i].album.artist.name;
-// albumData.albumImage = albumArray[i].album.image[1]["#text"];

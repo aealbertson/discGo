@@ -41,11 +41,11 @@
     <div class="panel panel-default">
       <div class="panel-heading">Top Albums for {{artist}}</div>
       <div class="panel-body">
-      <ul class="albumAlign">{{albumName1}}<br><img ng-src="{{albumImage1}}" /></ul>
-      <ul class="albumAlign">{{albumName2}}<br><img ng-src="{{albumImage2}}" /></ul>
-      <ul class="albumAlign">{{albumName3}}<br><img ng-src="{{albumImage3}}" /></ul>
-      <ul class="albumAlign">{{albumName4}}<br><img ng-src="{{albumImage4}}" /></ul>
-      <ul class="albumAlign">{{albumName5}}<br><img ng-src="{{albumImage5}}" /></ul>
+      <ul class="albumAlign" ng-if="albumName1 != '(null)'">{{albumName1}}<br><img ng-src="{{albumImage1}}" /></ul>
+      <ul class="albumAlign" ng-if="albumName2 != '(null)'">{{albumName2}}<br><img ng-src="{{albumImage2}}" /></ul>
+      <ul class="albumAlign" ng-if="albumName3 != '(null)'">{{albumName3}}<br><img ng-src="{{albumImage3}}" /></ul>
+      <ul class="albumAlign" ng-if="albumName4 != '(null)'">{{albumName4}}<br><img ng-src="{{albumImage4}}" /></ul>
+      <ul class="albumAlign" ng-if="albumName5 != '(null)'">{{albumName5}}<br><img ng-src="{{albumImage5}}" /></ul>
     </div>
   </div>
 </div>

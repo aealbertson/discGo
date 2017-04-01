@@ -236,10 +236,11 @@ button {
     letter-spacing: 2px;
     width: 100%;
 }
-.team-title h5 {
+h5 {
     margin-bottom: 0px;
     display: block;
     text-transform: uppercase;
+    float: left;
 }
 .team-title span {
     font-size: 12px;

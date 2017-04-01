@@ -2,9 +2,6 @@ var app = angular.module('discGo');
 
 app.factory('discGoFactory', function($http) {
 
-  var artistObject = {};
-  var albumObject = {};
-  var tracksObject = {};
   var artistName = "";
 
   return {

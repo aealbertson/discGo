@@ -3,6 +3,7 @@
       <a href="#/search"><img src="images/discgo.png" class="img-responsive margin artist" style="display:inline" alt="music" width="125" height="125"></a>
 
   <div class="navbar-header">
+
        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
@@ -16,10 +17,6 @@
       </div>
   </nav>
 
-  <div class = "artistName">
-      <p>{{artist}}<p>
-  </div>
-
 <div class="container-fluid">
   <div class="row">
   <div class="col-sm-4">
@@ -29,6 +26,9 @@
 
     <div class="col-sm-8">
       <div>
+        <div class = "artistName">
+            <p>{{artist}}<p>
+        </div>
         <div ng-bind-html="artistBio | unsafe">Panel Content</div>
       </div>
   </div>

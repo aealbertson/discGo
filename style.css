@@ -67,13 +67,17 @@ body {
   margin: 0 auto;
   width: 100%;
   border: 3px solid white;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .albumAlign h4 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 100%;
   display: block;
+}
+
+.albumAlign:hover img {
+  transform: scale(1.1);
 }
 
 h2 {

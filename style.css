@@ -1,16 +1,49 @@
-
 body {
     font: 14px Montserrat, sans-serif;
     line-height: 1.8;
-    color: black;
     height: 100%;
+}
+
+.topBanner {
+    height: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #23162d;
+}
+
+.container-fluid{
+  /*background-color: #efd79b;*/
+}
+
+.topBanner img {
+  float: right;
+}
+
+.tour {
+  max-width: 35%;
+  display: block;
+  margin: 0 auto;
+}
+
+.artistName h1 {
+  color: black;
+  font-family: 'Knewave', cursive;
+  font-size: 5vw;
+  text-align: center;
+  margin-bottom: 10px;
+  display: block;
 
 }
 
-.artistName p {
-  color: black;
-  font-family: 'Rubik Mono One', sans-serif;
-  font-size: 50px;
+.artistBio{
+  margin-top: 10px;
+  display: block;
+
 }
 
 .artistName {
@@ -18,46 +51,50 @@ body {
   text-align: center;
 }
 
+.albumContainer {
+  text-align: center;
+}
+
 .albumAlign {
-  text-align: center;
   display: inline-block;
-  height: 200px;
-  width: 200px;
-  margin: 10px;
-
+  margin: 1%;
+  width: 40%;
+  text-align: center;
 }
+
 .albumAlign img {
-  border-radius: 50%;
-  border: 3px solid black;
-  padding 5px;
   display: inline-block;
-  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  border: 3px solid white;
+  border-radius: 2px;
 }
 
-.albumAlign h5 {
-  text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
+.albumAlign h4 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 100%;
+  display: block;
 }
 
 h2 {
   margin-top: 40px;
   text-align: center;
-  font-family: 'Teko', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 p {
   font-size: 14px;
 }
+
 .margin {
   margin-bottom: 45px;
 }
 .bg-1 {
-    background-color: #144966; /* Blue */
+    background-color: #23162d;
     color: black;
 }
 .bg-2 {
-    background-color: #2f2f2f; /* Black Gray */
+    background-color: #575757;
     color: #fff;
 }
 
@@ -66,7 +103,7 @@ input[type=text] {
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 14px;
     background-color: white;
     background-image: url('search-icon.png');
     background-position: 2px 2px;
@@ -80,6 +117,9 @@ input[type=text]:focus {
     width: 100%;
 }
 
+.containter-foot {
+  display:block;
+}
 .container-fluid {
     padding-top: 10px;
     padding-bottom: 500px;
@@ -97,25 +137,42 @@ input[type=text]:focus {
   }
 
 
-.titleDisplay {
-    height: 150px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 0px;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-    background-color: #144966;
-}
-
-.titleDisplay img {
-  float: right;
-}
-
 button {
   float: right;
+  margin-left: 5px;
 }
+
+
+.artistImage {
+  max-width: 90%;
+  max-height: none;
+  display: block;
+  margin: 0 auto;
+  border: 12px solid black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .fa {
   padding: 20px;
   font-size: 25px;
@@ -126,16 +183,7 @@ button {
   border-radius: 50%;
 }
 
-.artistImage {
-  max-width: 90%;
-  max-height: none;
-  margin-left: auto;
-  margin-right: auto;
-  border: 12px solid black;
-
-}
-
-.fa:hover {
+fa:hover {
     opacity: 0.7;
 }
 

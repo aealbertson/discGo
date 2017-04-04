@@ -1,66 +1,71 @@
-  <div class="titleDisplay">
-      <a href="#/search"><img src="./images/DISCGO.png" class="img-responsive margin artist" style="display:inline" "float:right" alt="music" width="125" height="125"></a>
-  </div>
+
+<div class="topBanner">
+  <a href="#/search"><img src="./images/DISCGO.png" class="img-responsive margin artist" style="display:inline" "float:right" alt="music" width="125" height="125"></a>
+</div>
+
 <div class="container-fluid">
   <div class="row">
-  <div class="col-sm-4">
-    <img class = "artistImage" ng-src="{{artistImage}}"/>
-    <p class="tour" on-tour ng-if="onTourData == 1"></p>
-  </div>
+    
+    <div class="col-sm-4">  <!--div for artistImage and ONTOUR-->
+      <img class = "artistImage" ng-src="{{artistImage}}"/>
+      <a href="http://www.ticketmaster.com/"><img src="ONTOUR.png" class="tour" on-tour ng-if="onTourData == 1"/></a>
+    </div>
 
-    <div class="col-sm-8">
+    <div class="col-sm-8"> <!--div for bio and artistName -->
       <div>
         <div class = "artistName">
-            <p>{{artist}}<p>
+          <h1>{{artist}}</h1>
+          </div>
+          <div class="artistBio" ng-bind-html="artistBio | unsafe">Panel Content</div>
         </div>
-        <div ng-bind-html="artistBio | unsafe">Panel Content</div>
       </div>
-  </div>
-</div> <!-- // end of row -->
+    </div> <!-- // end of row -->
 
-<div class="row">
-  <div class="col-sm-6">
-      <h2>Top Albums for {{artist}}</h2>
+    <div class="row"> <!-- beginning of row for albums and tracks -->
+
+      <div class="col-sm-6 albumContainer responsive"> <!-- div for albums -->
+        <h2>Top Albums for {{artist}}</h2>
 
         <div class="albumAlign" ng-if="albumName1 != '(null)'">
           <img ng-src="{{albumImage1}}"/>
-          <h5>{{albumName1}}</h5>
+          <h4>{{albumName1}}</h4>
         </div>
 
         <div class="albumAlign" ng-if="albumName2 != '(null)'">
           <img ng-src="{{albumImage2}}"/>
-          <h5>{{albumName2}}</h5>
+          <h4>{{albumName2}}</h4>
         </div>
 
         <div class="albumAlign" ng-if="albumName3 != '(null)'">
           <img ng-src="{{albumImage3}}"/>
-          <h5>{{albumName3}}</h5>
+          <h4>{{albumName3}}</h4>
         </div>
 
         <div class="albumAlign" ng-if="albumName4 != '(null)'">
           <img ng-src="{{albumImage4}}"/>
-          <h5>{{albumName4}}</h5>
+          <h4>{{albumName4}}</h4>
         </div>
 
         <div class="albumAlign" ng-if="albumName5 != '(null)'">
           <img ng-src="{{albumImage5}}"/>
-          <h5>{{albumName5}}</h5>
+          <h4>{{albumName5}}</h4>
         </div>
-  </div>
+      </div>
 
 
-<div class="col-sm-6">
-      <h2>Top Tracks for {{artist}}</h2>
-      <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName1}}</p>
-      <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName2}}</p>
-      <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName3}}</p>
-      <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName4}}</p>
-      <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName5}}</p>
-      <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName6}}</p>
-      <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName7}}</p>
-      <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName8}}</p>
-      <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName9}}</p>
-      <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName10}}</p>
-    </div>
-  </div>
-</div>
+      <div class="col-sm-6"> <!--div for tracks -->
+
+        <h2>Top Tracks for {{artist}}</h2>
+        <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName1}}</p>
+        <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName2}}</p>
+        <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName3}}</p>
+        <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName4}}</p>
+        <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName5}}</p>
+        <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName6}}</p>
+        <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName7}}</p>
+        <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName8}}</p>
+        <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName9}}</p>
+        <p><span class="glyphicon glyphicon-cd" aria-hidden="true"></span>    {{trackName10}}</p>
+      </div> <!--closes div for tracks -->
+    </div> <!-- closes div row -->
+  </div> <!--closes main container -->

@@ -27,6 +27,12 @@ app.controller('printCtrl', function($scope, discGoFactory){
     $scope.albumImage4 = resp.topalbums.album["3"].image[2]["#text"];
     $scope.albumImage5 = resp.topalbums.album["4"].image[2]["#text"];
     $scope.albumImage6 = resp.topalbums.album["5"].image[2]["#text"];
+    $scope.albumUrl1 = resp.topalbums.album["0"].url;
+    $scope.albumUrl2 = resp.topalbums.album["1"].url;
+    $scope.albumUrl3 = resp.topalbums.album["2"].url;
+    $scope.albumUrl4 = resp.topalbums.album["3"].url;
+    $scope.albumUrl5 = resp.topalbums.album["4"].url;
+    $scope.albumUrl6 = resp.topalbums.album["5"].url;
   });
 
   $scope.tracksInfo = discGoFactory.searchTracks(artist).then(function(resp){
@@ -41,6 +47,16 @@ app.controller('printCtrl', function($scope, discGoFactory){
     $scope.trackName8 = resp.toptracks.track["7"].name;
     $scope.trackName9 = resp.toptracks.track["8"].name;
     $scope.trackName10 = resp.toptracks.track["9"].name;
+    $scope.trackUrl1 = resp.toptracks.track["0"].url;
+    $scope.trackUrl2 = resp.toptracks.track["1"].url;
+    $scope.trackUrl3 = resp.toptracks.track["2"].url;
+    $scope.trackUrl4 = resp.toptracks.track["3"].url;
+    $scope.trackUrl5 = resp.toptracks.track["4"].url;
+    $scope.trackUrl6 = resp.toptracks.track["5"].url;
+    $scope.trackUrl7 = resp.toptracks.track["6"].url;
+    $scope.trackUrl8 = resp.toptracks.track["7"].url;
+    $scope.trackUrl9 = resp.toptracks.track["8"].url;
+    $scope.trackUrl10 = resp.toptracks.track["9"].url;
   });
 
 });

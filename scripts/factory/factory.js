@@ -33,7 +33,7 @@ app.factory('discGoFactory', function($http) {
   function searchAlbum(searchCriteria) {
       var promise = $http({
         method: 'GET',
-        url: 'https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=' + searchCriteria + '&api_key=2f32cf4dbf47aa1b214b2cb2d18f9e24&autocorrect=1&limit=6&format=json'
+        url: 'https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=' + searchCriteria + '&api_key=2f32cf4dbf47aa1b214b2cb2d18f9e24&autocorrect=1&limit=10&format=json'
       }).then(function successCallback(response) {
         albumObject = response;
         return albumObject.data;

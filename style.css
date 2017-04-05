@@ -120,9 +120,12 @@ p {
     background-color: #23162d;
     color: black;
 }
-
+.bg-1 {
+  padding-top: 10px;
+  padding-bottom: 500px;
+}
 .bg-2 {
-    background-color: #575757;
+    background-color: #BFBFBF;
     color: #fff;
 }
 
@@ -175,28 +178,6 @@ button {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .fa {
   padding: 20px;
   font-size: 25px;
@@ -212,31 +193,31 @@ fa:hover {
 }
 
 .fa-facebook {
-  color: white;
+  color: black;
 }
 
 .fa-twitter {
-  color: white;
+  color:black;
 }
 
 .fa-google {
-  color: white;
+  color: black;
 }
 
 .fa-linkedin {
-  color: white;
+  color: black;
 }
 
 .fa-youtube {
-  color: white;
+  color: black;
 }
 
 .fa-instagram {
-  color: white;
+  color: black;
 }
 
 .fa-pinterest {
-  color: white;
+  color: black;
 }
 
 .heading-title {

@@ -16,57 +16,55 @@
         <a href="{{onTourUrl}}" target="_blank"><img src="images/ONTOUR.png" class="tour" on-tour ng-if="onTourData == 1"/></a>
       </div>
       <div class="col-sm-6" id="artistBio" ng-bind-html="artistBio | unsafe">Panel Content</div>
-    <div class="col-sm-2"></div>
+    <!-- <div class="col-sm-2"></div> -->
 </div>
 
     <div class="row"> <!-- beginning of row for albums and tracks -->
-    <div class="col-sm-"></div>
-      <div class="col-sm- albumContainer responsive"> <!-- div for albums -->
+      <div class="albumContainer container-fluid "> <!-- div for albums -->
         <h2>Top Albums for {{artist}}</h2>
 
-        <div class="albumAlign" ng-if="albumName1 != '(null)'">
+        <div class="albumAlign container-fluid" ng-if="albumName1 != '(null)'">
           <a href ="{{albumUrl1}}" target="_blank">
           <img ng-src="{{albumImage1}}"/>
           <h4>{{albumName1}}</h4>
           </a>
         </div>
 
-        <div class="albumAlign" ng-if="albumName2 != '(null)'">
+        <div class="albumAlign container-fluid " ng-if="albumName2 != '(null)'">
           <a href ="{{albumUrl2}}" target="_blank">
           <img ng-src="{{albumImage2}}"/>
           <h4>{{albumName2}}</h4>
           </a>
         </div>
 
-        <div class="albumAlign" ng-if="albumName3 != '(null)'">
+        <div class="albumAlign container-fluid" ng-if="albumName3 != '(null)'">
           <a href ="{{albumUrl3}}" target="_blank">
           <img ng-src="{{albumImage3}}"/>
           <h4>{{albumName3}}</h4>
           </a>
         </div>
 
-        <div class="albumAlign" ng-if="albumName4 != '(null)'">
+        <div class="albumAlign container-fluid" ng-if="albumName4 != '(null)'">
           <a href ="{{albumUrl4}}" target="_blank">
           <img ng-src="{{albumImage4}}"/>
           <h4>{{albumName4}}</h4>
           </a>
         </div>
 
-        <div class="albumAlign" ng-if="albumName5 != '(null)'">
+        <div class="albumAlign container-fluid" ng-if="albumName5 != '(null)'">
           <a href ="{{albumUrl5}}" target="_blank">
           <img ng-src="{{albumImage5}}"/>
           <h4>{{albumName5}}</h4>
           </a>
         </div>
 
-        <div class="albumAlign" ng-if="albumName6 != '(null)'">
+        <div class="albumAlign container-fluid" ng-if="albumName6 != '(null)'">
           <a href ="{{albumUrl6}}" target="_blank">
           <img ng-src="{{albumImage6}}"/>
           <h4>{{albumName6}}</h4>
           </a>
         </div>
         </div>
-        <div class="col-sm-2"></div>
     </div>
 
       <div class="row">

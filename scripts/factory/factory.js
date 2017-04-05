@@ -3,6 +3,7 @@ var app = angular.module('discGo');
 app.factory('discGoFactory', function($http) {
 
   var artistName = "";
+  var ticketMaster = "";
 
   return {
       searchArtist: searchArtist, // name of the function pulling the artist data from the api
@@ -12,7 +13,9 @@ app.factory('discGoFactory', function($http) {
       searchTracks: searchTracks,
       returnTracksData: returnTracksData,
       storeArtistName: storeArtistName,
-      getArtistName: getArtistName
+      getArtistName: getArtistName,
+      storeUrl: storeUrl,
+      getUrl: getUrl
     };
 
   function searchArtist(searchCriteria) {
@@ -68,4 +71,13 @@ app.factory('discGoFactory', function($http) {
   function getArtistName(){
     return artistName;
   }
+
+  function storeUrl(searchCriteria) {
+    ticketMaster = 'http://www.ticketmaster.com/search?tm_link=tm_header_search&user_input=' + searchCriteria + '&q=' + searchCriteria;
+  }
+
+  function getUrl(){
+    return ticketMaster;
+  }
+
 });

@@ -3,6 +3,10 @@ var app = angular.module('discGo');
 app.controller('printCtrl', function($scope, discGoFactory){
 
   var artist = discGoFactory.getArtistName();
+  var tmURL = discGoFactory.getUrl();
+  var tmURLFixed = encodeURI(tmURL);
+
+  $scope.onTourUrl = tmURLFixed;
 
 
   $scope.artistInfo = discGoFactory.searchArtist(artist).then(function(resp){

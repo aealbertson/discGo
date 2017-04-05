@@ -77,8 +77,8 @@ body {
   display: inline-block;
   margin: 0 auto;
   width: 1 vw;
-  border: 5px solid black;
-  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgba(0,0,0,0.2);
+  border-radius: 1px;
 }
 
 .albumAlign h4 {

@@ -9,7 +9,7 @@ body {
   width: 80%;
   margin: 0 auto;
   box-shadow: 20px 20px 10px rgba(0,0,0,0.10);
-  margin-top: 40px;
+  padding: 40px;
 }
 
 .topBanner {
@@ -47,9 +47,7 @@ body {
 .artistImage {
   max-width: 90%;
   display: block;
-  margin: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto;
   box-shadow: 5px 5px 2px rgba(0,0,0,0.2);
 }
 
@@ -64,10 +62,8 @@ body {
   display: inline-block;
   font-family: 'PT Sans', sans-serif;
   font-size: 1.7vw;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto;
   color: black;
-  padding: 20px;
 
 }
 
@@ -104,7 +100,7 @@ body {
 }
 
 h2 {
-  padding: 10px;
+  padding: 20px;
   margin-top: 40px;
   text-align: center;
   font-family: 'Abril Fatface', cursive;

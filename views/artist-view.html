@@ -16,6 +16,8 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#/about">ABOUT</a></li>
         <li><a href="#">SEARCH</a></li>
+        <li><a anchor-smooth-scroll="albums">ALBUMS</a></li>
+        <li><a anchor-smooth-scroll="tracks">TRACKS</a></li>
       </ul>
     </div>
   </div>
@@ -40,7 +42,7 @@
 
     <div class="row"> <!-- beginning of row for albums and tracks -->
       <div class="albumContainer container-fluid "> <!-- div for albums -->
-        <h1>Top Albums for {{artist}}</h1>
+        <h1 id ="albums">Top Albums for {{artist}}</h1>
 
         <div class="albumAlign container-fluid" ng-if="albumName1 != '(null)'">
           <a href ="{{albumUrl1}}" target="_blank">
@@ -93,7 +95,7 @@
       <div class="col-sm-"></div>
       <div class="col-sm-" id="tracks"> <!--div for tracks -->
 
-        <h1>Top Tracks for {{artist}}</h1>
+        <h1 id="tracks">Top Tracks for {{artist}}</h1>
         <p><a href ="{{trackUrl1}}" target="_blank"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>    {{trackName1}}</a></p>
         <p><a href ="{{trackUrl2}}" target="_blank"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>    {{trackName2}}</a></p>
         <p><a href ="{{trackUrl3}}" target="_blank"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>    {{trackName3}}</a></p>

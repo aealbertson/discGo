@@ -167,6 +167,8 @@ input[type=text]:focus {
 #records {
     padding-top: 10px;
     padding-bottom: 50px;
+    height: 100%;
+    width: 100%;
     background-image: url(record-background-tile.png);
     background-repeat: no-repeat;
     background-attachment: fixed;

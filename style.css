@@ -31,6 +31,8 @@ body {
     font-size: 16px;
     letter-spacing: 5px;
     background-color: #23211d;
+    font-family: 'Fjalla One', sans-serif;
+
   }
 
 .artistName h1 {
@@ -43,6 +45,11 @@ body {
   padding: 2%;
 }
 
+footer p {
+    font-family: 'Fjalla One', sans-serif;
+    padding: 2%;
+    font-size: 20px;
+}
 
 .artistImage {
   max-width: 90%;
@@ -60,13 +67,21 @@ body {
 
 #artistBio {
   display: inline-block;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 1.7vw;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.6vw;
   margin: 0 auto;
   color: black;
 
 }
 
+#tagLine {
+  text-align: center;
+  color: #BFBFBF;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2px;
+  font-size: 200%;
+  margin-bottom: 40px;
+}
 
 .albumContainer {
   text-align: center;
@@ -88,7 +103,7 @@ body {
 }
 
 .albumAlign h4 {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 100%;
   display: block;
   color: black;
@@ -99,7 +114,7 @@ body {
   transform: scale(1.1);
 }
 
-h2 {
+h1 {
   padding: 20px;
   margin-top: 40px;
   text-align: center;
@@ -109,7 +124,7 @@ h2 {
 
 #tracks p {
   text-align: center;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   letter-spacing: 2px;
   font-size: 150%;
   color: black;

@@ -140,6 +140,12 @@ p {
     background-color: #23162d;
     color: black;
 }
+#aboutPage {
+  background-color: grey;
+}
+#aboutPageBar {
+  background-color: #23162d;
+}
 .bg-1 {
   padding-top: 10px;
   padding-bottom: 500px;
@@ -345,4 +351,8 @@ h5 {
     text-transform: uppercase;
     color: #a5a5a5;
     letter-spacing: 1px;
+}
+
+.meet {
+  color: black;
 }
